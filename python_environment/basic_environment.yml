@@ -1,0 +1,9 @@
+name: Home_python3
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - matplotlib
+prefix: C:\DataScience\Anaconda3\envs\Home_python3
+
