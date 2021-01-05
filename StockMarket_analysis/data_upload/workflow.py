@@ -38,8 +38,9 @@ class workflow(AbstractWorkflow):
         :param config_container: Instance of ConfigurationsContainer
         """
 
-        session_path = preparatory_tasks(folder)
-        config_container.session_path = session_path
+        stock_symbol,platform = preparatory_tasks(folder)
+        config_container.stock_symbol = stock_symbol
+        config_container.platform = platform
 
     def main_workflow_method(self, folder, config_container):
         """
